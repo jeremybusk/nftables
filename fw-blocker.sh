@@ -5,6 +5,12 @@ import ipaddress
 import select
 import subprocess
 
+# Add set and place in wanted tables - check position if not insert first
+# sudo nft add set inet filter blackhole4 { type ipv4_addr\;}
+# sudo nft add rule inet filter input ip saddr @blackhole4 drop
+# sudo nft add rule inet filter forward ip saddr @blackhole4 drop
+
+
 
 reader = geolite2.reader()
 fw_management_ip = 'x.x.x.x'
