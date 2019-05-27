@@ -12,7 +12,7 @@ import subprocess
 # sudo nft list set inet filter blackhole4
 # sudo nft list ruleset > /etc/nftables.conf && systemctl restart nftables
 # sudo nft delete element inet filter blackhole4 { {ip} }
-# sudo -u root nft list ruleset > /etc/nftables.conf && sudo systemctl restart nftables
+# sudo nft list ruleset > /etc/nftables.conf && sudo systemctl restart nftables
 
 
 
