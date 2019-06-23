@@ -10,7 +10,7 @@ import subprocess
 # sudo nft add rule inet filter input ip saddr @blackhole4 drop
 # sudo nft add rule inet filter forward ip saddr @blackhole4 drop
 # sudo nft list set inet filter blackhole4
-# sudo nft list ruleset > /etc/nftables.conf && systemctl restart nftables
+# sudo nft list ruleset > /etc/nftables.conf && sudo systemctl restart nftables
 # sudo nft delete element inet filter blackhole4 { {ip} }
 # sudo nft list ruleset > /etc/nftables.conf && sudo systemctl restart nftables
 
