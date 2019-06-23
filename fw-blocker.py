@@ -1,4 +1,5 @@
-from geolite2 import geolite2
+#!/usr/bin/env python3
+# from geolite2 import geolite2
 import json
 import re
 import ipaddress
@@ -16,7 +17,7 @@ import subprocess
 
 
 
-reader = geolite2.reader()
+# reader = geolite2.reader()
 fw_management_ip = 'x.x.x.x'
 
 
